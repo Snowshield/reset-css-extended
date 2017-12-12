@@ -1,7 +1,7 @@
 {
   "name": "reset-css-extended",
-  "version": "1.0.0",
-  "description": "Standard css reset + more resets",
+  "version": "1.0.1",
+  "description": "More resets for css-reset",
   "main": "dist/reset.css",
   "scripts": {
     "build": "node-sass src/reset.scss -o dist --output-style compressed",
