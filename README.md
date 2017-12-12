@@ -1,13 +1,13 @@
 # reset-css-extended
-More resets for css-reset (https://github.com/shannonmoeller/reset-css)
+Standart css reset + more resets
+
 
 #### What is included:
+1. Standart reset-css
 1. Resets inputs and textareas to null
-1. Unify buttons and links as much as possible
-1. Add max-width to input, textarea and img
+1. unify buttons and links as much as possible
+1. Add max-width to inputs and images max-width
 
 #### What is not included:
-1. Original reset-css
 1. box-sizing: border-box
-1. Fonts and font sizes
-1. Css prefixes
+1. fonts and font sizes

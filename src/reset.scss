@@ -1,0 +1,35 @@
+
+@import "button-reset";
+@import "input-reset";
+
+// buttons and links
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  @include button-reset-and-align;
+}
+
+// inputs, textrea, img
+
+input,
+textarea {
+  @include input-reset;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea,
+input,
+img {
+  max-width: 100%;
+}

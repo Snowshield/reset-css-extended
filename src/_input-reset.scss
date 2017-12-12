@@ -1,0 +1,25 @@
+
+
+
+@mixin input-reset {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+
+  // disable ie11 buttons
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none; width: 0; height: 0;
+  }
+
+  // disable chrome icons
+  -webkit-appearance: none;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}

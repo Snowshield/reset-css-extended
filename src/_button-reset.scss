@@ -1,0 +1,25 @@
+
+
+
+@mixin button-reset {
+  border: 0;
+  padding: 0;
+
+  background-color: transparent;
+
+  // NOTE remove select on tabindex buttons
+  user-select: none;
+
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@mixin button-reset-and-align {
+  @include button-reset;
+
+  display: flex;
+  align-items: center;
+  text-align: start;
+}

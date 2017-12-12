@@ -1,0 +1,29 @@
+{
+  "name": "reset-css-extended",
+  "version": "1.0.0",
+  "description": "Standard css reset + more resets",
+  "main": "dist/reset.css",
+  "scripts": {
+    "build": "node-sass src/reset.scss -o dist --output-style compressed",
+    "update-dist": "git add dist",
+    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL\" && exit 1"
+  },
+  "pre-commit": [
+    "build",
+    "update-dist"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "pre-commit": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snowshield/reset-css-extended.git"
+  },
+  "author": "Nikita Borisenko <github.snowshield@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Snowshield/reset-css-extended/issues"
+  },
+  "homepage": "https://github.com/Snowshield/reset-css-extended#readme"
+}
